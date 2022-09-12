@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class TP3 {
+public class TP3Test {
     WebDriver driver;
 
     @BeforeMethod
@@ -45,3 +45,4 @@ public class TP3 {
     }
 
 }
+
