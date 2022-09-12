@@ -2,11 +2,18 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
 import java.util.List;
 
-public class TP4 {
+public class TP4Test {
+
+    WebDriver driver;
 
     @Test
     public void testIphone(){
@@ -27,7 +34,7 @@ public class TP4 {
         ajoutPanier.click();
         WebElement panier = driver.findElement(By.xpath( "//div[@class='nav-line-2']"));
         panier.click();
-        WebElement panier = driver.findElement(By.xpath( "//div[@class='nav-line-2']"));
+        /*WebElement panier = driver.findElement(By.xpath( "//div[@class='nav-line-2']"));
         panier.click();
 
         Assert.assertTrue(logo.isDisplayed(), "The Amazon Logo is not displayed");
@@ -41,7 +48,7 @@ public class TP4 {
         Assert.assertEquals(amazonBasics.getText(), expectedAmazonBasics);
 
         Assert.assertTrue(meilleuresVentesLivres.isDisplayed());
-        Assert.assertEquals(meilleuresVentesLivres.getText(), expectedVentesLivres);
+        Assert.assertEquals(meilleuresVentesLivres.getText(), expectedVentesLivres);*/
 
 
 
@@ -61,7 +68,7 @@ public class TP4 {
         categoriesSelect.selectByIndex(4);
     }
 
-    ```@Test
+    @Test
     public void testAmazon() {
         //******************************* Arrange******************************//
         final String expectedTaille  = "256Go";
@@ -113,5 +120,5 @@ public class TP4 {
 
 
 
-    }```
+    }
 }
